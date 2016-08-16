@@ -1,7 +1,6 @@
-# hapi
-a better way to do network APIs like HTTP/REST
 
 # Smarter HTTP API  (HAPI?)
+a better way to do network APIs like HTTP/REST
 
 ## Philosophy
 * HTTP endpoints should be like function calls
