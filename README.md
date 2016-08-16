@@ -49,3 +49,10 @@ Response: { "id": 1122, "customer": {"name": "Bob L. Smith", "address": "234 Bre
 URL:  https://example.com/api/orders/delete
 Request: {"id": 4567}
 Response: {"id": 4567, "status": "Deleted"}
+
+## Related projects
+[Barrister RPC](http://barrister.bitmechanic.com)
+[GRPC](http://grpc.io)
+
+## How HAPI Differs From RPC
+{{TODO}}
