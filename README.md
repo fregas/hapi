@@ -24,31 +24,38 @@ a better way to do network APIs like HTTP/REST
 ## Examples:
 
 ### Find One Existing order:
+```
 URL: https://example.com/api/orders/find-one
 Request: {"id": 1234}
 Response: {"id": 1234, "customer": {"id": 234, "Bob SMith"}}
+```
 
 ### Find all orders via a query:
+```
 URL: https://example.com/api/orders/find-all
 Request: { "sort": "ASC", "maxResult": 25, "customerId": 456}
 Response: [{"id": 1234, "customer": {"id": 234, "Bob SMith"}}]
-
+```
 
 ### Save a new order:
+```
 URL: https://example.com/api/orders/save
 Request: { "customer": {"name": "Bob Smith", "address": "234 Brecken St."}, "orderLines": [{"productId": 555, "quantity": 3}] }
 Response: { "id": 1122, "customer": {"name": "Bob Smith", "address": "234 Brecken St."}, "orderLines": [{"productId": 555, "quantity": 3}] }
-
+```
 
 ### Save an EXISTING order
+```
 URL: https://example.com/api/orders/save
 Request: { "id": 1122, "customer": {"name": "Bob L. Smith", "address": "234 Brecken St."}, "orderLines": [{"productId": 555, "quantity": 3}] }
 Response: { "id": 1122, "customer": {"name": "Bob L. Smith", "address": "234 Brecken St."}, "orderLines": [{"productId": 555, "quantity": 3}] }
-
+```
 ### Delete an order
+```
 URL:  https://example.com/api/orders/delete
 Request: {"id": 4567}
 Response: {"id": 4567, "status": "Deleted"}
+```
 
 ## Related projects
 [Barrister RPC](http://barrister.bitmechanic.com)
